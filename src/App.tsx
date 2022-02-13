@@ -4,7 +4,7 @@ import Projects from "./screens/Projects";
 import Works from "./screens/Works";
 import bg from "./assets/1.jpg";
 import avatar from "./assets/avatar.png";
-import { LightBulbIcon } from "@heroicons/react/outline";
+import { HashtagIcon } from "@heroicons/react/outline";
 
 const contents = [
   {
@@ -32,15 +32,15 @@ const contents = [
 export default function App() {
   return (
     <div className="relative overflow-hidden">
-      <div style={{ backgroundImage: `url(${bg})` }}>
+      <div style={{ backgroundImage: `url(${bg})` }} className="bg-cover">
         <div className="relative pt-6 pb-16 sm:pb-24">
           <Nav />
 
           <main className="px-4 mx-auto mt-16 max-w-7xl sm:mt-24">
             <div className="text-center">
-              <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
+              <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
                 <span className="block py-2 xl:inline">끊임없이 배우고 </span>
-                <span className="block py-2 text-indigo-800 xl:inline">
+                <span className="block py-2 text-indigo-700 xl:inline">
                   발전해나가는 이지혜입니다
                 </span>
               </h1>
@@ -54,9 +54,9 @@ export default function App() {
                   {contents.map((content: any) => (
                     <p
                       key={content.id}
-                      className="flex items-center max-w-md mt-3 text-base text-gray-700 md:mt-4 md:max-w-3xl"
+                      className="flex items-center max-w-md mt-3 text-sm text-gray-900 sm:text-base md:mt-4 md:max-w-3xl"
                     >
-                      <LightBulbIcon className="w-5 h-5 mr-2" />
+                      <HashtagIcon className="w-5 h-5 mr-2" />
                       {content.detail}
                     </p>
                   ))}

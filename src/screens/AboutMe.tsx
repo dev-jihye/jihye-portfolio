@@ -11,10 +11,13 @@ const label = [
   { id: 8, name: "jQuery" },
   { id: 9, name: "Github" },
 ];
+
 export default function AboutMe() {
   return (
     <Layout>
-      <h2 className="mb-10 text-3xl font-bold">ABOUT ME</h2>
+      <h2 id="aboutMe" className="mb-10 text-3xl font-bold">
+        ABOUT ME
+      </h2>
       <h3 className="mb-3 font-medium text-gray-600">📚 EDUCATION</h3>
       <div className="mb-8">
         <span className="bg-[#e1e1e1] text-[#0066ff] rounded-md px-2 py-1 text-sm">
@@ -28,7 +31,7 @@ export default function AboutMe() {
           <span className="bg-[#e1e1e1] text-[#0066ff] rounded-md px-2 py-1 text-sm">
             2020.12~2021.8
           </span>
-          <span className="ml-2">해래 기술연구소 프론트엔드</span>
+          <span className="ml-2">해래 개발팀 프론트엔드</span>
         </div>
         <div>
           <span className=" bg-[#e1e1e1] text-[#0066ff] rounded-md px-2 py-1 text-sm">
@@ -49,11 +52,30 @@ export default function AboutMe() {
         ))}
       </div>
       <h3 className="mb-2 font-medium text-gray-600">✉️  CONTACT</h3>
-      <div>
+      <div className="p-1.5">
         <span className="mr-2 ">이메일 | jihye_340@naver.com</span>
       </div>
-      <div>
-        <span className="mr-2 ">깃허브 | https://github.com/dev-jihye</span>
+      <div className="p-1.5">
+        <span className="mr-2 ">
+          깃허브 |{" "}
+          <a
+            href="https://github.com/dev-jihye"
+            className="p-1 bg-indigo-200 rounded-md cursor-pointer"
+          >
+            https://github.com/dev-jihye
+          </a>
+        </span>
+      </div>
+      <div className="p-1.5">
+        <span className="mr-2 ">
+          블로그 |{" "}
+          <a
+            href="https://jihye-dev.tistory.com"
+            className="p-1 bg-indigo-200 rounded-md cursor-pointer"
+          >
+            https://jihye-dev.tistory.com
+          </a>
+        </span>
       </div>
     </Layout>
   );
