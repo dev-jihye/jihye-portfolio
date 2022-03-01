@@ -35,7 +35,7 @@ export default function Projects() {
           </p>
           <ul className="py-4">
             <li>
-              ✔︎ React js, graphql react-router, tailwind, Apollo Client를
+              ✔︎ React.js, GraphQL, react-router, tailwindcss, Apollo Client를
               사용하여 만든 사이트
             </li>
             <li>
@@ -71,8 +71,8 @@ export default function Projects() {
           <p className="py-2">오늘 먹은 음식을 공유하며 소통하는 블로그</p>
           <ul className="py-4">
             <li>
-              ✔︎ React js, firebase, styled-component, react-router, tailwind,
-              Apollo Client를 사용하여 만든 블로그
+              ✔︎ React.js, Firebase, styled-components, react-router, tailwind,
+              Apollo Client 를 사용하여 만든 블로그
             </li>
             <li>✔︎ 주요기능 : 회원가입, 글 작성, 수정 및 삭제, 스킨 설정</li>
             <li>✔︎ 모바일 / 패드 / 웹 반응형 웹 개발 </li>
@@ -104,7 +104,7 @@ export default function Projects() {
           <p className="py-2">오늘 먹은 음식을 공유하며 소통하는 블로그</p>
           <ul className="py-4">
             <li>
-              ✔︎ React js, firebase, styled-component 를 사용하여 만든 웨딩
+              ✔︎ React.js, firebase, styled-components 를 사용하여 만든 웨딩
               청첩장 사이트
             </li>
             <li>✔︎ 주요기능 : 연락처 연결, 방명록 남기기, 카카오 내비</li>
